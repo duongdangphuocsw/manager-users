@@ -2,6 +2,12 @@ hr {
     height: 2px;
     background-color: #000;
 }
+@mixin btn{
+    color: #f3f3f3;
+    width: 120px;
+    font-size: 15px;
+    text-align: left;
+}
 .usersManager {
     ul.boxSearch{
         padding: 0;
@@ -20,6 +26,41 @@ hr {
             select{
                 width: 200px;
             }
+        }
+    }
+    .boxControl {
+        display: flex;
+        position: relative;
+        color: #FFFFFF;
+        .btnAdd {
+            position: absolute;
+            left: 0px;
+            background-color: #2c43b8;
+            @include btn();
+        }
+        .btnAdd:hover {
+            cursor: pointer;
+        }
+        .btnFind {
+            right: 25%;
+            position: absolute;
+            @include btn();
+            background-color: #2c43b8;
+        }
+        .btnFind:hover {
+            cursor: pointer;
+        }
+        .btnDelete {
+            right: 5%;
+            position: absolute;
+            @include btn();
+            background-color:  #89e82a;
+        }
+        .btnDelete:hover {
+            cursor: pointer;
+        }
+        i {
+            padding-right: 5px;
         }
     }
 }

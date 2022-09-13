@@ -69,6 +69,50 @@ hr {
 .usersManager ul.boxSearch .groupSearch select {
   width: 200px;
 }
+.usersManager .boxControl {
+  display: flex;
+  position: relative;
+  color: #FFFFFF;
+}
+.usersManager .boxControl .btnAdd {
+  position: absolute;
+  left: 0px;
+  background-color: #2c43b8;
+  color: #f3f3f3;
+  width: 120px;
+  font-size: 15px;
+  text-align: left;
+}
+.usersManager .boxControl .btnAdd:hover {
+  cursor: pointer;
+}
+.usersManager .boxControl .btnFind {
+  right: 25%;
+  position: absolute;
+  color: #f3f3f3;
+  width: 120px;
+  font-size: 15px;
+  text-align: left;
+  background-color: #2c43b8;
+}
+.usersManager .boxControl .btnFind:hover {
+  cursor: pointer;
+}
+.usersManager .boxControl .btnDelete {
+  right: 5%;
+  position: absolute;
+  color: #f3f3f3;
+  width: 120px;
+  font-size: 15px;
+  text-align: left;
+  background-color: #89e82a;
+}
+.usersManager .boxControl .btnDelete:hover {
+  cursor: pointer;
+}
+.usersManager .boxControl i {
+  padding-right: 5px;
+}
 
 body {
   margin: 0;
