@@ -1,0 +1,25 @@
+hr {
+    height: 2px;
+    background-color: #000;
+}
+.usersManager {
+    ul.boxSearch{
+        padding: 0;
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around; 
+        .groupSearch{
+            display: block;
+            label {
+                font-weight: 600;
+                display: block;
+            }
+            input {
+                width: 200px;
+            }
+            select{
+                width: 200px;
+            }
+        }
+    }
+}
