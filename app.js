@@ -1,6 +1,5 @@
 const $ = document.querySelector.bind(document);
-import {
-    oneVar, $$ 
-} from './constants.js';
+const $$ = document.querySelectorAll.bind(document);
+
 import clickItemHandle from './header.js';
 clickItemHandle();

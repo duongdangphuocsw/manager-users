@@ -45,6 +45,31 @@ header .access p {
   margin-right: 10px;
 }
 
+hr {
+  height: 2px;
+  background-color: #000;
+}
+
+.usersManager ul.boxSearch {
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+.usersManager ul.boxSearch .groupSearch {
+  display: block;
+}
+.usersManager ul.boxSearch .groupSearch label {
+  font-weight: 600;
+  display: block;
+}
+.usersManager ul.boxSearch .groupSearch input {
+  width: 200px;
+}
+.usersManager ul.boxSearch .groupSearch select {
+  width: 200px;
+}
+
 body {
   margin: 0;
   padding: 0;
