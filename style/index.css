@@ -113,6 +113,9 @@ hr {
 .usersManager .boxControl i {
   padding-right: 5px;
 }
+.usersManager .boxControl .tableBox table tr th {
+  text-align: left;
+}
 
 body {
   margin: 0;
