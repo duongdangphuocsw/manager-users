@@ -1,0 +1,48 @@
+@mixin alignCenter {
+  display: flex;
+  align-items: center;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  background-color: #afb5ba;
+  .list-items {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    li {
+      padding: 10px 10px;
+      font-size: 20px;
+      transition: all 0.5s ease-in-out;
+      font-weight: 300;
+      width: 100%;
+    }
+    li:hover {
+      cursor: pointer;
+      color: #f3f3f3;
+    }
+    .active {
+        background-color: #eb1010;
+        color: #f3f3f3;
+    }
+  }
+  .access {
+    display: flex;
+    i {
+      @include alignCenter();
+      margin-right: 10px;
+    }
+    i::before{
+      border: 1px solid  #000;
+      border-radius: 50%;
+      padding: 5px;
+    }
+    p {
+      height: 100%;
+      margin: 0;
+      @include alignCenter();
+      margin-right: 10px;
+    }
+  }
+}
