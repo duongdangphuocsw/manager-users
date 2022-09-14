@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="./style/fontawesome-free-6.1.1-web/css/all.css"
     />
+    
   </head>
   <body>
     <div class="container">
@@ -63,33 +64,42 @@
             <button class="btnDelete"><i class="fa-regular fa-rectangle-xmark"></i>Xóa tìm</button>
           </div>
           <br>
-          <div class="tableBox">
-            <table style="width:100%">
+          <table class="table">
+            <thead>
               <tr>
-                <th>#</th>
-                <th>Họ tên</th>
-                <th>Email</th>
-                <th>Nhóm</th>
-                <th>Trạng thái</th>
-                <th>Chỉnh sửa</th>
+                <th scope="col">#</th>
+                <th scope="col">Họ tên</th>
+                <th scope="col">Email</th>
+                <th scope="col">Nhóm</th>
+                <th scope="col">Trạng thái</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
               </tr>
               <tr>
-                <td>1</td>
-                <td>Dương Đăng Phước</td>
-                <td>duongdangphuoc.bk@gmail.com</td>
-                <td>Admin</td>
-                <td>Đang hoạt động</td>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
               </tr>
               <tr>
-                <td>Centro comercial Moctezuma</td>
-                <td>Francisco Chang</td>
-                <td>Mexico</td>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
               </tr>
-            </table>
+            </tbody>
+          </table>
           </div>
         </div>
       </div>
     </div>
     <script src="./app.js" type="module"></script>
+    
   </body>
 </html>

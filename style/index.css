@@ -113,8 +113,17 @@ hr {
 .usersManager .boxControl i {
   padding-right: 5px;
 }
-.usersManager .boxControl .tableBox table tr th {
+.usersManager .table {
+  width: 100%;
+  margin-top: 20px;
+}
+.usersManager .table thead {
+  background-color: #ff1212;
+  width: 100%;
+}
+.usersManager .table thead tr th {
   text-align: left;
+  color: #FFFFFF;
 }
 
 body {
