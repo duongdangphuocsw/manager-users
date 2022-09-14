@@ -113,15 +113,15 @@ hr {
 .usersManager .boxControl i {
   padding-right: 5px;
 }
-.usersManager .table {
+.usersManager .tableBox {
   width: 100%;
   margin-top: 20px;
 }
-.usersManager .table thead {
+.usersManager .tableBox thead {
   background-color: #ff1212;
   width: 100%;
 }
-.usersManager .table thead tr th {
+.usersManager .tableBox thead tr th {
   text-align: left;
   color: #FFFFFF;
 }

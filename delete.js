@@ -1,15 +1,4 @@
-const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
-
-import clickItemHandle from './header.js';
-import renderUsers from './renderUser.js';
-//import deleteHandle from './renderUser.js';
-clickItemHandle();
 const usersApi = "https://631c255e4fa7d3264ca7c5ca.mockapi.io/api/users";
-function start() {
-    renderUsers();
-}
-start();
 function deleteHandle(id) {
     confirm('Bạn có muốn xoá thành viên này không?');
     // $.ajax({
@@ -20,6 +9,4 @@ function deleteHandle(id) {
     //     }
     // });
 }
-
-
-
+export default deleteHandle;
