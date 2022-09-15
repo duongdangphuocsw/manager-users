@@ -1,31 +1,27 @@
 const usersApi = "https://631c255e4fa7d3264ca7c5ca.mockapi.io/api/users";
-import renderUsers from "./renderUser";
-function deleteHandle(id) {
-    // $.ajax({
-    //     url: usersApi + '/' + id,
-    //     type: 'DELETE',
-    //     success: function(result) {
-    //         // Do something with the result
-    //     }
-    // });
-    //confirm('Bạn có muốn xoá thành viên này không?');
-    return new Promise((resole, reject) => {
-        resole(id);
-        confirm('Bạn có muốn xoá thành viên này không?');
-    })
+function reloadWithNoCache() {
+  window.location = window.location.href + "?eraseCache=" + Math.random();
 }
-deleteHandle() 
-.then((id) => {
-    let content = 'Bạn có muốn xóa thành viên này không?';
-    // if(confirm(content) == true) {
-    //       $.ajax({
-    //     url: usersApi + '/' + id,
-    //     type: 'DELETE',
-    //     success: function(result) {
-    //         alert('Xóa thành công');
-    //         //renderUsers();
-    //     }
-    // });
-    // }
-})
+function deleteMethod(id) {
+  $.ajax({
+    url: usersApi + "/" + id,
+    type: "DELETE",
+    success: function (result) {
+      alert("Xóa thành công");
+      reloadWithNoCache();
+    },
+  });
+}
+function deleteHandle(id) {
+  const content = "Bạn có muốn xóa thành viên này không?";
+  window.onkeyup = (e) => {
+    if (e.which == 27) {
+      confirmPopup = true;
+    }
+  };
+  let confirmPopup = confirm(content);
+  if (confirmPopup == true) {
+    deleteMethod(id);
+  }
+}
 export default deleteHandle;
