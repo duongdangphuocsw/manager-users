@@ -7,7 +7,7 @@ function renderUsers() {
   );
 }
 function handleActive(user) {
-  if (user.is_active === true) return "Đang hoạt động";
+  if (user.is_active == 'true') return "Đang hoạt động";
   else return "Tạm khoá";
 }
 function getUsersHandle(data) {
