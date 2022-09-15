@@ -22,7 +22,7 @@ function getUsersHandle(data) {
             <td>${user.email}</td>
             <td>${user.id}</td>
             <td>${activeContent}</td>
-            <td>
+            <td class="control">
             <i class="fa-solid fa-pen"></i>
             <i class="fa-solid fa-trash" onclick="deleteHandle(${user.id})"></i>
             <i class="fa-solid fa-user-check"></i></td>
