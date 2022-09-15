@@ -31,5 +31,4 @@ function getUsersHandle(data) {
   });
   tableElement.innerHTML = html.join("");
 }
-
 export default renderUsers;
