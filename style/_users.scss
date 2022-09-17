@@ -9,11 +9,12 @@ hr {
     text-align: left;
 }
 .usersManager {
-    ul.boxSearch{
+    .boxSearch{
         padding: 0;
         display: flex;
         list-style-type: none;
-        justify-content: space-around; 
+        justify-content: space-around;
+        margin-bottom: 10px;
         .groupSearch{
             display: block;
             label {
@@ -32,6 +33,7 @@ hr {
         display: flex;
         position: relative;
         color: #FFFFFF;
+        margin-bottom: 40px;
         .btnAdd {
             position: absolute;
             left: 0px;
@@ -74,8 +76,15 @@ hr {
                     text-align: left;
                     color: #FFFFFF;
                 }
-            }          
+            
+            }    
         }   
     }
-
+    .editBtn {
+        color: #074aa3;
+    }
+    .deleteBtn {
+        color: #ff1212;
+        margin: 0 10px 10px;
+    }
 }

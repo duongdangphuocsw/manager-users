@@ -50,29 +50,31 @@ hr {
   background-color: #000;
 }
 
-.usersManager ul.boxSearch {
+.usersManager .boxSearch {
   padding: 0;
   display: flex;
   list-style-type: none;
   justify-content: space-around;
+  margin-bottom: 10px;
 }
-.usersManager ul.boxSearch .groupSearch {
+.usersManager .boxSearch .groupSearch {
   display: block;
 }
-.usersManager ul.boxSearch .groupSearch label {
+.usersManager .boxSearch .groupSearch label {
   font-weight: 600;
   display: block;
 }
-.usersManager ul.boxSearch .groupSearch input {
+.usersManager .boxSearch .groupSearch input {
   width: 200px;
 }
-.usersManager ul.boxSearch .groupSearch select {
+.usersManager .boxSearch .groupSearch select {
   width: 200px;
 }
 .usersManager .boxControl {
   display: flex;
   position: relative;
   color: #FFFFFF;
+  margin-bottom: 40px;
 }
 .usersManager .boxControl .btnAdd {
   position: absolute;
@@ -124,6 +126,13 @@ hr {
 .usersManager .tableBox thead tr th {
   text-align: left;
   color: #FFFFFF;
+}
+.usersManager .editBtn {
+  color: #074aa3;
+}
+.usersManager .deleteBtn {
+  color: #ff1212;
+  margin: 0 10px 10px;
 }
 
 body {

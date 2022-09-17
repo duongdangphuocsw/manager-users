@@ -7,8 +7,8 @@ function deleteMethod(id) {
     url: usersApi + "/" + id,
     type: "DELETE",
     success: function (result) {
-      alert("Xóa thành công");
       reloadWithNoCache();
+      alert("Xóa thành công");
     },
   });
 }

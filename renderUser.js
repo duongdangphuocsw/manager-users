@@ -13,19 +13,19 @@ function handleActive(user) {
 function getUsersHandle(data) {
   let html;
   let tableElement = document.querySelector(".tableBox tbody");
-  html = data.map(function (user) {
+  html = data.map(function (user,index) {
     let activeContent = handleActive(user);
     return `
         <tr>
-            <td>${user.id}</td>
+            <td>${index + 1}</td>
             <td>${user.name}</td>
             <td>${user.email}</td>
-            <td>${user.id}</td>
-            <td>${activeContent}</td>
+            <td>${user.group_role}</td>
+            <td class="activeId_${user.id}">${activeContent}</td>
             <td class="control">
-            <i class="fa-solid fa-pen"></i>
-            <i class="fa-solid fa-trash" onclick="deleteHandle(${user.id})"></i>
-            <i class="fa-solid fa-user-check"></i></td>
+            <i class="fa-solid fa-pen editBtn"></i>
+            <i class="fa-solid fa-trash deleteBtn" onclick="deleteHandle(${user.id})"></i>
+            <i class="fa-solid fa-user-check activeBtn" onclick="activeUser(${user.id})"></i></td>
         </tr>
     `;
   });

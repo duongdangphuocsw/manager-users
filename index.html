@@ -17,9 +17,9 @@
     <div class="container">
       <header>
         <ul class="list-items">
-          <li class="item active">Products</li>
+          <li class="item ">Products</li>
           <li class="item">Customer</li>
-          <li class="item">Users</li>
+          <li class="item active">Users</li>
         </ul>
         <div class="access">
           <i class="fa-solid fa-user"></i>
@@ -31,40 +31,41 @@
         <div class="optionItem"></div>
         <div class="optionItem usersManager">
           <h1 class="title">Users</h1>
-          <hr />
-          <ul class="boxSearch">
-            <li class="groupSearch">
+          <hr/>
+          <form>
+          <div class="boxSearch">
+            <div class="groupSearch">
               <label for="">Tên</label>
-              <input type="text" placeholder="Nhập họ tên" />
-            </li>
-            <li class="groupSearch">
-              <label for="">Tên</label>
-              <input type="text" placeholder="Nhập email" />
-            </li>
-            <li class="groupSearch">
+              <input type="text" placeholder="Nhập họ tên" id="nameInput" required="" />
+            </div>
+            <div class="groupSearch">
+              <label for="">Email</label>
+              <input type="email" placeholder="Nhập email" id="emailInput" pattern=".+@gmail.com" required/>
+            </div>
+            <div class="groupSearch">
               <label for="">Nhóm</label>
-              <select id="group">
-                <option value="">Chọn nhóm</option>
+              <select id="group" required>
+                <option value="Chọn nhóm">Chọn nhóm</option>
                 <option value="Admin">Admin</option>
                 <option value="Editor">Editor</option>
                 <option value="Reviewer">Reviewer</option>
               </select>
-            </li>
-            <li class="groupSearch">
+            </div>
+            <div class="groupSearch">
               <label for="">Trạng thái</label>
-              <select id="status">
-                <option value="Đang hoạt động">Chọn trạng thái</option>
+              <select id="status" required>
+                <option value="Chọn trạng thái">Chọn trạng thái</option>
                 <option value="Đang hoạt động">Đang hoạt động</option>
                 <option value="Tạm khóa">Tạm khóa</option>
               </select>
-            </li>
-          </ul>
+            </div>
+          </div>
           <div class="boxControl">
-            <button class="btnAdd"><i class="fa-solid fa-user-plus"></i>Thêm mới</button>
+            <button type="submit" class="btnAdd"><i class="fa-solid fa-user-plus"></i>Thêm mới</button>
             <button class="btnFind"><i class="fa-solid fa-magnifying-glass"></i>Tìm kiếm</button>
             <button class="btnDelete"><i class="fa-regular fa-rectangle-xmark"></i>Xóa tìm</button>
           </div>
-          <br>
+          </form>
           <table class="tableBox">
             <thead>
               <tr>
