@@ -73,7 +73,7 @@ hr {
 .usersManager .boxControl {
   display: flex;
   position: relative;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 40px;
 }
 .usersManager .boxControl .btnAdd {
@@ -119,13 +119,40 @@ hr {
   width: 100%;
   margin-top: 20px;
 }
+.usersManager .tableBox tr {
+  line-height: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.usersManager .tableBox tr th.indexUser,
+.usersManager .tableBox tr td.indexUser {
+  width: 5%;
+}
+.usersManager .tableBox tr th,
+.usersManager .tableBox tr td {
+  width: 21.25%;
+}
+.usersManager .tableBox tr td.control,
+.usersManager .tableBox tr th.control {
+  width: 10%;
+}
+.usersManager .tableBox tr td.groupUser,
+.usersManager .tableBox tr th.groupUser {
+  text-align: center;
+}
+.usersManager .tableBox tr td.emailUser input {
+  width: 100%;
+}
+.usersManager .tableBox tr.indexEven {
+  background-color: #dededa;
+}
 .usersManager .tableBox thead {
   background-color: #ff1212;
   width: 100%;
 }
 .usersManager .tableBox thead tr th {
   text-align: left;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .usersManager .tableBox thead tr .userActive {
   color: #ff1212;
@@ -137,8 +164,13 @@ hr {
   color: #ff1212;
   margin: 0 10px 10px;
 }
+.usersManager .checkBtn {
+  color: #00CC00;
+  font-weight: bold;
+  font-size: 20px;
+}
 .usersManager .userActive {
-  color: #89e82a;
+  color: #00CC00;
 }
 .usersManager .userNotActive {
   color: #ff1212;

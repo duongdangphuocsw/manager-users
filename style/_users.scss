@@ -1,98 +1,137 @@
 hr {
-    height: 2px;
-    background-color: #000;
+  height: 2px;
+  background-color: #000;
 }
-@mixin btn{
-    color: #f3f3f3;
-    width: 120px;
-    font-size: 15px;
-    text-align: left;
+@mixin btn {
+  color: #f3f3f3;
+  width: 120px;
+  font-size: 15px;
+  text-align: left;
 }
 .usersManager {
-    .boxSearch{
-        padding: 0;
-        display: flex;
-        list-style-type: none;
-        justify-content: space-around;
-        margin-bottom: 10px;
-        .groupSearch{
-            display: block;
-            label {
-                font-weight: 600;
-                display: block;
-            }
-            input {
-                width: 200px;
-            }
-            select{
-                width: 200px;
-            }
-        }
+  .boxSearch {
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    .groupSearch {
+      display: block;
+      label {
+        font-weight: 600;
+        display: block;
+      }
+      input {
+        width: 200px;
+      }
+      select {
+        width: 200px;
+      }
     }
-    .boxControl {
-        display: flex;
-        position: relative;
-        color: #FFFFFF;
-        margin-bottom: 40px;
-        .btnAdd {
-            position: absolute;
-            left: 0px;
-            background-color: #2c43b8;
-            @include btn();
-        }
-        .btnAdd:hover {
-            cursor: pointer;
-        }
-        .btnFind {
-            right: 25%;
-            position: absolute;
-            @include btn();
-            background-color: #2c43b8;
-        }
-        .btnFind:hover {
-            cursor: pointer;
-        }
-        .btnDelete {
-            right: 5%;
-            position: absolute;
-            @include btn();
-            background-color:  #89e82a;
-        }
-        .btnDelete:hover {
-            cursor: pointer;
-        }
-        i {
-            padding-right: 5px;
-        }
+  }
+  .boxControl {
+    display: flex;
+    position: relative;
+    color: #ffffff;
+    margin-bottom: 40px;
+    .btnAdd {
+      position: absolute;
+      left: 0px;
+      background-color: #2c43b8;
+      @include btn();
     }
-    .tableBox {
+    .btnAdd:hover {
+      cursor: pointer;
+    }
+    .btnFind {
+      right: 25%;
+      position: absolute;
+      @include btn();
+      background-color: #2c43b8;
+    }
+    .btnFind:hover {
+      cursor: pointer;
+    }
+    .btnDelete {
+      right: 5%;
+      position: absolute;
+      @include btn();
+      background-color: #89e82a;
+    }
+    .btnDelete:hover {
+      cursor: pointer;
+    }
+    i {
+      padding-right: 5px;
+    }
+  }
+  .tableBox {
+    width: 100%;
+    margin-top: 20px;
+    tr {
+        line-height: 40px;
+      display: flex;
+      justify-content: space-around;
+      th.indexUser,
+      td.indexUser {
+        width: 5%;
+      }
+      th,
+      td {
+        width: 21.25%;
+      }
+      td.control,
+      th.control {
+        width: 10%;
+      }
+      td.groupUser,
+      th.groupUser {
+        text-align: center;
+      }
+      td.emailUser input {
         width: 100%;
-        margin-top: 20px;
-        thead{
-            background-color: #ff1212;
-            width: 100%;
-            tr{
-                th {
-                    text-align: left;
-                    color: #FFFFFF;
-                }
-                .userActive {
-                    color: #ff1212;
-                }
-            }    
-        }   
+      }
+
     }
-    .editBtn {
-        color: #074aa3;
+    tr.indexEven{
+        background-color: #dededa;
     }
-    .deleteBtn {
-        color: #ff1212;
-        margin: 0 10px 10px;
+    thead {
+      background-color: #ff1212;
+      width: 100%;
+
+      tr {
+        // display: flex;
+        // justify-content: space-around;
+        th {
+          text-align: left;
+          color: #ffffff;
+        }
+        .userActive {
+          color: #ff1212;
+        }
+      }
     }
-    .userActive {
-        color: #89e82a;
-    }
-    .userNotActive {
-        color: #ff1212;
-    }
+  }
+  .editBtn {
+    color: #074aa3;
+  }
+  .deleteBtn {
+    color: #ff1212;
+    margin: 0 10px 10px;
+  }
+  .activeBtn {
+    // color: #444644;
+  }
+  .checkBtn{
+    color: #00CC00;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .userActive {
+    color: #00CC00;
+  }
+  .userNotActive {
+    color: #ff1212;
+  }
 }
