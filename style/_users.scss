@@ -76,7 +76,9 @@ hr {
                     text-align: left;
                     color: #FFFFFF;
                 }
-            
+                .userActive {
+                    color: #ff1212;
+                }
             }    
         }   
     }
@@ -86,5 +88,11 @@ hr {
     .deleteBtn {
         color: #ff1212;
         margin: 0 10px 10px;
+    }
+    .userActive {
+        color: #89e82a;
+    }
+    .userNotActive {
+        color: #ff1212;
     }
 }

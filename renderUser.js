@@ -15,13 +15,20 @@ function getUsersHandle(data) {
   let tableElement = document.querySelector(".tableBox tbody");
   html = data.map(function (user,index) {
     let activeContent = handleActive(user);
+    let isActiveToSetName;
+    if(user.is_active == 'true') {
+      isActiveToSetName = 'userActive';
+    }
+    else {
+      isActiveToSetName = 'userNotActive';
+    }
     return `
         <tr>
             <td>${index + 1}</td>
             <td>${user.name}</td>
             <td>${user.email}</td>
             <td>${user.group_role}</td>
-            <td class="activeId_${user.id}">${activeContent}</td>
+            <td class="activeId_${user.id} ${isActiveToSetName}">${activeContent}</td>
             <td class="control">
             <i class="fa-solid fa-pen editBtn"></i>
             <i class="fa-solid fa-trash deleteBtn" onclick="deleteHandle(${user.id})"></i>

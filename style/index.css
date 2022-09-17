@@ -127,12 +127,21 @@ hr {
   text-align: left;
   color: #FFFFFF;
 }
+.usersManager .tableBox thead tr .userActive {
+  color: #ff1212;
+}
 .usersManager .editBtn {
   color: #074aa3;
 }
 .usersManager .deleteBtn {
   color: #ff1212;
   margin: 0 10px 10px;
+}
+.usersManager .userActive {
+  color: #89e82a;
+}
+.usersManager .userNotActive {
+  color: #ff1212;
 }
 
 body {
