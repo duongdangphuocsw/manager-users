@@ -1,3 +1,4 @@
+import renderUser from "./renderUser.js";
 const usersApi = "https://631c255e4fa7d3264ca7c5ca.mockapi.io/api/users";
 function reloadWithNoCache() {
   window.location = window.location.href + "?eraseCache=" + Math.random();
@@ -40,11 +41,11 @@ function handleEditUser(id) {
   userEditElement.innerHTML = html;
   let btnCheckElement = userEditElement.querySelector(".checkBtn");
   btnCheckElement.onclick = () => {
+    console.log(">>> check btn");
     let name = userEditElement.querySelector('input[name="nameEdit"]'),
       email = userEditElement.querySelector('input[name="emailEdit"]'),
       group = userEditElement.querySelector('select[name="groupEdit"]'),
       status = userEditElement.querySelector('select[name="statusEdit"]');
-    //console.log(name);
     let dataEdit = {
       name: name.value,
       email: email.value,
@@ -65,7 +66,7 @@ function editMethod(id, data) {
       is_Active: data.isActive,
     },
     success: function () {
-      reloadWithNoCache();
+      renderUser();
     },
   });
 }

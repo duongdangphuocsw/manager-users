@@ -36,11 +36,11 @@
           <div class="boxSearch">
             <div class="groupSearch">
               <label for="">Tên</label>
-              <input type="text" placeholder="Nhập họ tên" id="nameInput" required="" />
+              <input type="text" placeholder="Nhập họ tên" id="nameInput"  />
             </div>
             <div class="groupSearch">
               <label for="">Email</label>
-              <input type="email" placeholder="Nhập email" id="emailInput" pattern=".+@gmail.com" required/>
+              <input type="email" placeholder="Nhập email" id="emailInput" pattern=".+@gmail.com"/>
             </div>
             <div class="groupSearch">
               <label for="">Nhóm</label>
@@ -53,7 +53,7 @@
             </div>
             <div class="groupSearch">
               <label for="">Trạng thái</label>
-              <select id="status" required>
+              <select id="status">
                 <option value="Chọn trạng thái">Chọn trạng thái</option>
                 <option value="Đang hoạt động">Đang hoạt động</option>
                 <option value="Tạm khóa">Tạm khóa</option>
@@ -80,13 +80,25 @@
             <tbody>
             </tbody>
           </table>
-        <ul class="text"></ul>
+        <div class="pagination">
+          <a href="#" onclick="handlePrevPage()">&laquo;</a>
+          <div class="list-pages">
+            <a href="#">1</a>
+            <a class="active" href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+          </div>   
+          <a href="#" onclick="handleNextPage()">&raquo;</a>
+        </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="./app.js" type="module"></script>
+    <script type="module">
+      import {start} from "./app.js"
+    </script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
   </body>
 </html>

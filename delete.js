@@ -1,4 +1,9 @@
+import renderUser from './renderUser.js';
+import panigation from './panigation.js';
+import { getData } from './renderUser.js';
 const usersApi = "https://631c255e4fa7d3264ca7c5ca.mockapi.io/api/users";
+//import {testImport} from "./app.js"
+// testImport();
 function reloadWithNoCache() {
   window.location = window.location.href + "?eraseCache=" + Math.random();
 }
@@ -7,8 +12,9 @@ function deleteMethod(id) {
     url: usersApi + "/" + id,
     type: "DELETE",
     success: function (result) {
-      reloadWithNoCache();
+      renderUser();
       alert("Xóa thành công");
+      getData(panigation);
     },
   });
 }

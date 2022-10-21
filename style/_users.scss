@@ -69,7 +69,7 @@ hr {
     width: 100%;
     margin-top: 20px;
     tr {
-        line-height: 40px;
+      line-height: 40px;
       display: flex;
       justify-content: space-around;
       th.indexUser,
@@ -91,10 +91,9 @@ hr {
       td.emailUser input {
         width: 100%;
       }
-
     }
-    tr.indexEven{
-        background-color: #dededa;
+    tr.indexEven {
+      background-color: #dededa;
     }
     thead {
       background-color: #ff1212;
@@ -120,16 +119,13 @@ hr {
     color: #ff1212;
     margin: 0 10px 10px;
   }
-  .activeBtn {
-    // color: #444644;
-  }
-  .checkBtn{
-    color: #00CC00;
+  .checkBtn {
+    color: #00cc00;
     font-weight: bold;
     font-size: 20px;
   }
   .userActive {
-    color: #00CC00;
+    color: #00cc00;
   }
   .userNotActive {
     color: #ff1212;
